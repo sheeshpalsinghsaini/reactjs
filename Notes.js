@@ -20,9 +20,16 @@ Building a Website:
 
 
 
+props[property]: 
+    - normal argument fo the function.
 
 
 
+config driven ui: 
+    - 
+
+- adding unique key in map, react only reander those component is not there. means only new new components render not all.
+- react suggest don't use index as a key. bcz react confused in index and key.[we can use but not recommended]
 
 
 
