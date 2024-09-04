@@ -1,39 +1,22 @@
 /*
-Building a Website: 
-
-    Header 
-       - logo 
-       - Nav items
-    Body 
-        - search bar
-        - search button 
-        - RestaurantContainer 
-            - REstaurantCard
-    Footer 
-        - Copyright (c)
-        - Links
-        - Address 
-        - Contact 
-        - Social media icons
+Hooks: 
+    - they are normal javascript functions, utility function. develop by facebook developer install after npm isntall 
+    important hooks 
+        1. useState(): use to generate with some extra feature javascript variables
+        2. useEffect()
 
 
 
 
 
-props[property]: 
-    - normal argument fo the function.
+there are two types of export components 
+    1. default export [in the last use export default then compeont name.]
+    2. named export [ add export keyword to each component ]
+
+there are two way to import components respectively
+    1. import ComponentName then path
+    2. import {ComponentName} from 'path'
 
 
 
-config driven ui: 
-    - 
-
-- adding unique key in map, react only reander those component is not there. means only new new components render not all.
-- react suggest don't use index as a key. bcz react confused in index and key.[we can use but not recommended]
-
-
-
-
-
-
-*/
+*/ 
