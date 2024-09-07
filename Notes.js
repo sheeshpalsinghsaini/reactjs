@@ -1,21 +1,37 @@
 /*
-Hooks: 
-    - they are normal javascript functions, utility function. develop by facebook developer install after npm isntall 
-    important hooks 
-        1. useState(): use to generate with some extra feature javascript variables
-        2. useEffect()
+
+
+there are two approach to load web page.
+
+    1. load => API calls => Render
+    
+    2. load => Render => API calls [ recommnded approach], at least visible something on screen before api calls.
 
 
 
 
 
-there are two types of export components 
-    1. default export [in the last use export default then compeont name.]
-    2. named export [ add export keyword to each component ]
+    useEffect(): 
+        - call immediately after render component.
+        - it take two arguments
+            1. callback function
+            2. dependencies array 
 
-there are two way to import components respectively
-    1. import ComponentName then path
-    2. import {ComponentName} from 'path'
+        useEffect(()=> {
+                //code here
+                console.log("useEffect called")
+            }[]);
+
+
+* Shimmer UI: 
+    - show fake page, while load actual data. 
+    
+
+
+
+
+
+
 
 
 
