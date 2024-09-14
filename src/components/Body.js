@@ -7,7 +7,7 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]); // useState variable will make empty array.
   const [filterRestaurants, setFilterRestaurants] = useState([]); // useState variable will make empty array.
 
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState(""); // alway use huck inside component. use in top of component.never use inside if-else statement.
   // let listOfRestaurants = [
   //     {
   //         "info": {
@@ -58,6 +58,12 @@ const Body = () => {
   //       }}
   // ]
 
+
+
+  
+  // if no dependencies array => useEffect is called on every render 
+  // if dependency array is empty => useEffect is called on initial render (just once)
+  // if dependency array is [btnNameReact] =>called every time when btnNameReact is updated.
   useEffect(() => {
     // console.log("useEffect called");
     fetchData();
