@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import logo from "../../images/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     // let loginBtnName = "Login";
@@ -14,16 +15,20 @@ const Header = () => {
             </div>
             <div className="nav-items">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    {/* never use anchor tag, for routing, it will reload again, use link component. */}
+                    <li><Link to={"/"}>Home</Link></li>
+                    <li><a href="/about">About</a></li>
+                    
+                    <li><Link to={"/contact"}>Contact</Link></li>
                     <li>Cart</li>
+                    <li>
                     <button className="login-btn" onClick={
                         ()=> {
                             btnNameReact = (btnNameReact === "Login")?setBtnNameReact("Logout"):setBtnNameReact("Login");
 
                         }
                     }>{btnNameReact}</button>
+                    </li>
                 </ul>
             </div>
         </div>
